@@ -8,6 +8,7 @@ Try running some of the following tasks:
 
 ```shell
 ./frpc -c ./frpc.ini
+
 export NODE_OPTIONS=--openssl-legacy-provider
 npx hardhat accounts
 npx hardhat compile
@@ -18,6 +19,7 @@ npx hardhat help
 REPORT_GAS=true npx hardhat test
 npx hardhat coverage
 npx hardhat run scripts/deploy.ts
+npx hardhat export-abi --no-compile
 TS_NODE_FILES=true npx ts-node scripts/deploy.ts
 npx eslint '**/*.{js,ts}'
 npx eslint '**/*.{js,ts}' --fix
